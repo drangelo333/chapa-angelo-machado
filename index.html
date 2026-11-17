@@ -7,11 +7,17 @@
 <title>Chapa Dr. Ângelo Machado — CA de Medicina</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&amp;family=Figtree:wght@400;500;600&amp;display=swap">
 <style>:root{--ink:#0b1a45;--paper:#f3f8ff;--card:#fff;--line:#cfe0f5;--acc:#0d5bd6;--acc-ink:#fff;--mint:#19c8f0;--sun:#9bd8ff;--muted:#45557f;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--ink:#eaf4ff;--paper:#0a1230;--card:#101b4a;--line:#22306e;--acc:#4cc9f0;--acc-ink:#0a1230;--muted:#9fb3dc;color-scheme:dark}}:root[data-theme="dark"]{--ink:#eaf4ff;--paper:#0a1230;--card:#101b4a;--line:#22306e;--acc:#4cc9f0;--acc-ink:#0a1230;--muted:#9fb3dc;color-scheme:dark}html{scroll-behavior:smooth;scroll-padding-top:env(safe-area-inset-top,0px)}*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:400 1.0625rem/1.6 Figtree,system-ui,sans-serif}h1,h2,h3{font-family:"Bricolage Grotesque",Figtree,sans-serif;line-height:1.08;margin:0}h2{font-size:clamp(1.9rem,6vw,2.8rem);font-weight:800;letter-spacing:-.02em}a{color:inherit}:focus-visible{outline:3px solid var(--acc);outline-offset:3px}.wrap{max-width:1040px;margin:0 auto;padding:0 20px}section{padding:68px 0}nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--paper);border-bottom:1px solid var(--line)}nav .wrap{display:flex;gap:18px;align-items:center;overflow-x:auto;white-space:nowrap;padding-top:12px;padding-bottom:12px}nav b{font-family:"Bricolage Grotesque";font-weight:800;margin-right:auto}nav a{text-decoration:none;font-weight:500;font-size:.95rem;color:var(--muted)}nav a:hover{color:var(--ink)}.hero{padding:56px 0 40px;position:relative;overflow:hidden}.hero h1{font-size:clamp(2.6rem,11vw,6rem);font-weight:800;letter-spacing:-.035em;max-width:11ch}.hero p{max-width:46ch;color:var(--muted);font-size:1.15rem;margin:20px 0 28px}.btns{display:flex;gap:12px;flex-wrap:wrap}.btn{display:inline-block;padding:13px 22px;border-radius:999px;font-weight:600;text-decoration:none;border:2px solid var(--acc);cursor:pointer;background:transparent;color:inherit}.btn.p{background:var(--acc);color:var(--acc-ink)}.tabs{display:flex;gap:8px;flex-wrap:wrap;margin:26px 0 18px}.tab,.chip{font:inherit;font-weight:500;border:1.5px solid var(--line);background:var(--card);color:var(--ink);padding:9px 16px;border-radius:999px;cursor:pointer}.tab[aria-selected="true"],.chip[aria-pressed="true"]{background:var(--ink);color:var(--paper);border-color:var(--ink)}.panel{display:grid;gap:12px}.panel .prop-item{background:var(--card);border:1px solid var(--line);border-left:6px solid var(--mint);border-radius:10px;padding:16px 18px;position:relative}.panel strong{display:block;font-family:"Bricolage Grotesque";font-size:1.15rem;margin-bottom:2px}.panel span{color:var(--muted)}.membros-lista{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:18px;margin-top:28px}.person{text-align:left;position:relative}.av{aspect-ratio:1;border-radius:50% 50% 14px 50%;display:grid;place-items:center;font:800 2.2rem "Bricolage Grotesque";color:#1c1840;margin-bottom:10px}.person b{display:block}.person small{color:var(--muted)}form{display:grid;gap:12px;max-width:560px;margin-top:24px}label{font-weight:600;display:grid;gap:6px}input,select,textarea{font:inherit;padding:12px 14px;border-radius:10px;border:1.5px solid var(--line);background:var(--card);color:var(--ink)}.dark-band{background:var(--ink);color:var(--paper)}.dark-band p{color:inherit;opacity:.8;max-width:52ch}footer{padding:36px 0 48px;color:var(--muted);font-size:.95rem;border-top:1px solid var(--line)}@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}.hero .wrap{display:grid;gap:28px;align-items:center}@media(min-width:760px){.hero .wrap{grid-template-columns:1.25fr 1fr}}.hero h1{max-width:14ch;font-size:clamp(2.3rem,8vw,4.6rem)}.logo-container{position:relative;justify-self:center;width:100%;max-width:340px}.logo{width:100%;aspect-ratio:1;object-fit:cover;border-radius:50%;background:var(--card);border:2px solid var(--line);display:grid;place-items:center;text-align:center;padding:20px;font-weight:700;color:var(--muted)}.about{display:grid;gap:14px;max-width:62ch}.about p{margin:0}.lattes{display:inline-block;margin-top:6px;font-size:.85rem;font-weight:600;color:var(--sun)}#fok{margin:0;font-weight:600}.dark-band .person small{color:inherit;opacity:.75}img.av{display:block;width:100%;object-fit:cover}.gal{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px;margin-top:22px}.gal img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:12px}
-
+ 
 /* Imagens sempre visíveis por padrão (sem opacity:0/visibility:hidden) */
 img.av,img.logo,.gal img{opacity:1;visibility:visible;transition:opacity .3s ease-in-out}
 .membros-lista img{min-height:1px}
-
+ 
+/* Edição de textos no modo admin */
+body.admin-mode [data-edit]{outline:2px dashed rgba(25,200,240,.75);outline-offset:3px;border-radius:4px;cursor:text}
+body.admin-mode [data-edit]:hover,body.admin-mode [data-edit]:focus{background:rgba(25,200,240,.14);outline-style:solid}
+body.admin-mode [data-edit]:empty::before{content:"(vazio — clique para escrever)";opacity:.6}
+.float-mid-left{position:absolute;top:44px;left:10px;z-index:10}
+ 
 /* Estilos do Painel Administrativo Oculto */
 #admin-toolbar{display:none;background:#050d21;color:#fff;padding:12px 20px;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;border-bottom:3px solid var(--mint);position:sticky;top:0;z-index:99}
 .modal-backdrop{display:none;position:fixed;inset:0;background:rgba(0,0,0,0.82);z-index:9999;justify-content:center;align-items:center;padding:16px}
@@ -28,19 +34,20 @@ body.admin-mode .admin-block{display:block !important}
 </style>
 </head>
 <body class="">
-
+ 
 <!-- BARRA DE FERRAMENTAS DO ADMINISTRADOR (Oculta por padrão) -->
 <div id="admin-toolbar" style="display: none;">
     <div><b>Modo Administrador Ativo</b></div>
     <div style="display:flex; gap:8px; flex-wrap:wrap;">
-        <button class="btn" style="padding:6px 12px; font-size:0.8rem;" onclick="openModal('add-member-modal')">+ Membro</button>
+        <button class="btn" style="padding:6px 12px; font-size:0.8rem;" onclick="openMemberModal()">+ Membro</button>
         <button class="btn" style="padding:6px 12px; font-size:0.8rem;" onclick="openProposalModal()">+ Proposta</button>
         <button class="btn" style="padding:6px 12px; font-size:0.8rem; border-color:var(--mint); color:var(--mint);" onclick="openDemandasModal()">📥 Ver Demandas (<span id="dem-count">0</span>)</button>
         <button class="btn p" style="padding:6px 12px; font-size:0.8rem;" onclick="exportHTML()">💾 Baixar HTML Atualizado</button>
+        <button class="btn" style="padding:6px 12px; font-size:0.8rem;" onclick="resetTextos()">↩ Restaurar textos</button>
         <button class="btn" style="padding:6px 12px; font-size:0.8rem; background:#e74c3c; border-color:#e74c3c; color:#fff;" onclick="logoutAdmin()">Sair</button>
     </div>
 </div>
-
+ 
 <!-- MODAL DE LOGIN DO ADMIN -->
 <div id="admin-login-modal" class="modal-backdrop" style="display: none;">
     <div class="modal-box">
@@ -56,17 +63,17 @@ body.admin-mode .admin-block{display:block !important}
         </div>
     </div>
 </div>
-
+ 
 <!-- MODAL ADICIONAR MEMBRO -->
 <div id="add-member-modal" class="modal-backdrop" style="display: none;">
     <div class="modal-box">
-        <h3>Adicionar Membro</h3>
+        <h3 id="member-modal-title">Adicionar Membro</h3>
         <div style="display:grid; gap:10px; margin-bottom:16px;">
             <label>Nome Completo <input type="text" id="m-name" placeholder="Ex: Nome Sobrenome"></label>
             <label>Cargo / Função <input type="text" id="m-role" placeholder="Ex: Diretor de..."></label>
             <label>Período / Turma <input type="text" id="m-period" placeholder="Ex: Turma 10 – 5º período"></label>
             <label>Link Lattes (Opcional) <input type="text" id="m-lattes" placeholder="http://lattes..."></label>
-            <label>Foto do Membro <input type="file" id="m-file" accept="image/*"></label>
+            <label>Foto do Membro (deixe vazio para manter a atual) <input type="file" id="m-file" accept="image/*"></label>
         </div>
         <div style="display:flex; gap:10px;">
             <button class="btn p" style="flex:1; padding:10px;" onclick="saveNewMember()">Salvar</button>
@@ -74,7 +81,7 @@ body.admin-mode .admin-block{display:block !important}
         </div>
     </div>
 </div>
-
+ 
 <!-- MODAL ADICIONAR / EDITAR PROPOSTA -->
 <div id="proposal-modal" class="modal-backdrop" style="display: none;">
     <div class="modal-box">
@@ -98,7 +105,7 @@ body.admin-mode .admin-block{display:block !important}
         </div>
     </div>
 </div>
-
+ 
 <!-- MODAL VER DEMANDAS RECEBIDAS (APENAS MODO ADMIN) -->
 <div id="demandas-modal" class="modal-backdrop" style="display: none;">
     <div class="modal-box" style="max-width:600px;">
@@ -118,20 +125,20 @@ body.admin-mode .admin-block{display:block !important}
         </div>
     </div>
 </div>
-
+ 
 <!-- INPUT OCULTO PARA UPLOAD DE IMAGENS -->
 <input type="file" id="hidden-img-input" accept="image/*" style="display:none;">
-
-<nav><div class="wrap"><b id="nm">Chapa Dr. Ângelo Machado</b><a href="#sobre">Sobre</a><a href="#propostas">Propostas</a><a href="#equipe">Equipe</a><a href="#escuta">Escuta</a></div></nav>
-
+ 
+<nav><div class="wrap"><b id="nm" data-edit="nome">Chapa Dr. Ângelo Machado</b><a href="#sobre" data-edit="nav_sobre">Sobre</a><a href="#propostas" data-edit="nav_propostas">Propostas</a><a href="#equipe" data-edit="nav_equipe">Equipe</a><a href="#escuta" data-edit="nav_escuta">Escuta</a></div></nav>
+ 
 <header class="hero">
     <div class="wrap">
         <div>
-            <h1>Ciência, prática e escuta na sua formação.</h1>
-            <p>Chapa Acadêmica Dr. Ângelo Machado, candidata à gestão 2027.1/2027.2 do CAMFF, o Centro Acadêmico de Medicina da Afya Guanambi.</p>
+            <h1 data-edit="hero_titulo">Ciência, prática e escuta na sua formação.</h1>
+            <p data-edit="hero_texto">Chapa Acadêmica Dr. Ângelo Machado, candidata à gestão 2027.1/2027.2 do CAMFF, o Centro Acadêmico de Medicina da Afya Guanambi.</p>
             <div class="btns">
-                <a class="btn p" href="#propostas">Ver as propostas</a>
-                <a class="btn" href="#escuta">Enviar uma demanda</a>
+                <a class="btn p" href="#propostas" data-edit="hero_btn1">Ver as propostas</a>
+                <a class="btn" href="#escuta" data-edit="hero_btn2">Enviar uma demanda</a>
             </div>
         </div>
         <div class="logo-container">
@@ -140,14 +147,19 @@ body.admin-mode .admin-block{display:block !important}
         </div>
     </div>
 </header>
-
-<section id="sobre"><div class="wrap"><h2>Quem somos</h2><div class="about"><p>Somos estudantes de Medicina que querem uma gestão democrática, participativa, transparente e acessível, pautada no diálogo e na responsabilidade.</p><p>O nome Dr. Ângelo Machado homenageia um médico, professor e pesquisador brasileiro, referência na educação médica e na ciência.</p><p>Nosso compromisso: fortalecer ensino, pesquisa e extensão, ouvir todas as turmas e dar retorno a cada demanda.</p></div></div></section>
-
+ 
+<section id="sobre"><div class="wrap"><h2 data-edit="sobre_titulo">Quem somos</h2><div class="about"><p data-edit="sobre_p1">Somos estudantes de Medicina que querem uma gestão democrática, participativa, transparente e acessível, pautada no diálogo e na responsabilidade.</p><p data-edit="sobre_p2">O nome Dr. Ângelo Machado homenageia um médico, professor e pesquisador brasileiro, referência na educação médica e na ciência.</p><p data-edit="sobre_p3">Nosso compromisso: fortalecer ensino, pesquisa e extensão, ouvir todas as turmas e dar retorno a cada demanda.</p></div></div></section>
+ 
 <section id="propostas">
     <div class="wrap">
         <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px;">
-            <h2>Como queremos ajudar na sua formação</h2>
-            <button class="adm-badge-btn admin-only" style="padding:8px 14px; font-size:0.85rem;" onclick="openProposalModal()">+ Adicionar Proposta</button>
+            <h2 data-edit="propostas_titulo">Como queremos ajudar na sua formação</h2>
+            <div style="display:flex; gap:8px; flex-wrap:wrap;">
+                <button class="adm-badge-btn admin-only" style="padding:8px 14px; font-size:0.85rem;" onclick="openProposalModal()">+ Adicionar Proposta</button>
+                <button class="adm-badge-btn admin-only" style="padding:8px 14px; font-size:0.85rem;" onclick="renameArea()">✏️ Renomear aba</button>
+                <button class="adm-badge-btn admin-only" style="padding:8px 14px; font-size:0.85rem;" onclick="newArea()">+ Nova aba</button>
+                <button class="adm-badge-btn danger admin-only" style="padding:8px 14px; font-size:0.85rem;" onclick="deleteArea()">Excluir aba</button>
+            </div>
         </div>
         <div class="tabs" role="tablist" id="tabs"><button class="tab" role="tab" aria-selected="true">Ensino e prática</button><button class="tab" role="tab" aria-selected="false">Pesquisa e carreira</button><button class="tab" role="tab" aria-selected="false">Representação e integração</button><button class="tab" role="tab" aria-selected="false">Materiais de estudo</button><button class="tab" role="tab" aria-selected="false">Responsabilidade social</button></div>
         <div class="panel" id="panel" role="tabpanel">
@@ -180,10 +192,11 @@ body.admin-mode .admin-block{display:block !important}
     </div>
     </div>
 </section>
-
-<section id="equipe" class="dark-band"><div class="wrap"><h2>Quem faz parte</h2><p>Diferentes períodos, histórias e experiências, com o mesmo propósito: uma faculdade mais acolhedora.</p><div class="membros-lista" id="membros-lista"><div class="person">
+ 
+<section id="equipe" class="dark-band"><div class="wrap"><h2 data-edit="equipe_titulo">Quem faz parte</h2><p data-edit="equipe_texto">Diferentes períodos, histórias e experiências, com o mesmo propósito: uma faculdade mais acolhedora.</p><div class="membros-lista" id="membros-lista"><div class="person">
             <button class="adm-badge-btn danger float-top-left admin-only" onclick="deleteMember(0)">X</button>
             <button class="adm-badge-btn float-top-right admin-only" onclick="triggerPhotoEdit(0)">Foto</button>
+            <button class="adm-badge-btn float-mid-left admin-only" onclick="openMemberModal(0)">Editar</button>
             <img class="av" src="assets/integrantes/foto-perfil-01.webp" alt="Foto de Luna Afonso Batista Costa" width="400" height="400" loading="lazy" decoding="async">
             <b>Luna Afonso Batista Costa</b>
             <small>Presidente · Turma 9 – 6º período</small>
@@ -191,6 +204,7 @@ body.admin-mode .admin-block{display:block !important}
         </div><div class="person">
             <button class="adm-badge-btn danger float-top-left admin-only" onclick="deleteMember(1)">X</button>
             <button class="adm-badge-btn float-top-right admin-only" onclick="triggerPhotoEdit(1)">Foto</button>
+            <button class="adm-badge-btn float-mid-left admin-only" onclick="openMemberModal(1)">Editar</button>
             <img class="av" src="assets/integrantes/foto-perfil-02.webp" alt="Foto de Geise Ketle Ribeiro Cotrim" width="400" height="400" loading="lazy" decoding="async">
             <b>Geise Ketle Ribeiro Cotrim</b>
             <small>Vice-presidente · Turma 7 – 8º período</small>
@@ -198,6 +212,7 @@ body.admin-mode .admin-block{display:block !important}
         </div><div class="person">
             <button class="adm-badge-btn danger float-top-left admin-only" onclick="deleteMember(2)">X</button>
             <button class="adm-badge-btn float-top-right admin-only" onclick="triggerPhotoEdit(2)">Foto</button>
+            <button class="adm-badge-btn float-mid-left admin-only" onclick="openMemberModal(2)">Editar</button>
             <img class="av" src="assets/integrantes/foto-perfil-03.webp" alt="Foto de Paloma Bianca Costa Teixeira" width="400" height="400" loading="lazy" decoding="async">
             <b>Paloma Bianca Costa Teixeira</b>
             <small>1ª Secretária · 8º período</small>
@@ -205,6 +220,7 @@ body.admin-mode .admin-block{display:block !important}
         </div><div class="person">
             <button class="adm-badge-btn danger float-top-left admin-only" onclick="deleteMember(3)">X</button>
             <button class="adm-badge-btn float-top-right admin-only" onclick="triggerPhotoEdit(3)">Foto</button>
+            <button class="adm-badge-btn float-mid-left admin-only" onclick="openMemberModal(3)">Editar</button>
             <img class="av" src="assets/integrantes/foto-perfil-04.webp" alt="Foto de Mariana Vitória Queiroz Pereira Vitorino" width="400" height="400" loading="lazy" decoding="async">
             <b>Mariana Vitória Queiroz Pereira Vitorino</b>
             <small>2ª Secretária · Turma 14 – 1º período</small>
@@ -212,6 +228,7 @@ body.admin-mode .admin-block{display:block !important}
         </div><div class="person">
             <button class="adm-badge-btn danger float-top-left admin-only" onclick="deleteMember(4)">X</button>
             <button class="adm-badge-btn float-top-right admin-only" onclick="triggerPhotoEdit(4)">Foto</button>
+            <button class="adm-badge-btn float-mid-left admin-only" onclick="openMemberModal(4)">Editar</button>
             <img class="av" src="assets/integrantes/foto-perfil-05.webp" alt="Foto de Herbert Augusto Fernandes Souza" width="400" height="400" loading="lazy" decoding="async">
             <b>Herbert Augusto Fernandes Souza</b>
             <small>1º Tesoureiro · Turma 7 – 8º período</small>
@@ -219,6 +236,7 @@ body.admin-mode .admin-block{display:block !important}
         </div><div class="person">
             <button class="adm-badge-btn danger float-top-left admin-only" onclick="deleteMember(5)">X</button>
             <button class="adm-badge-btn float-top-right admin-only" onclick="triggerPhotoEdit(5)">Foto</button>
+            <button class="adm-badge-btn float-mid-left admin-only" onclick="openMemberModal(5)">Editar</button>
             <img class="av" src="assets/integrantes/foto-perfil-06.webp" alt="Foto de Ana Luiza dos Santos Barbosa" width="400" height="400" loading="lazy" decoding="async">
             <b>Ana Luiza dos Santos Barbosa</b>
             <small>2ª Tesoureira · Turma 11 – 4º período</small>
@@ -226,6 +244,7 @@ body.admin-mode .admin-block{display:block !important}
         </div><div class="person">
             <button class="adm-badge-btn danger float-top-left admin-only" onclick="deleteMember(6)">X</button>
             <button class="adm-badge-btn float-top-right admin-only" onclick="triggerPhotoEdit(6)">Foto</button>
+            <button class="adm-badge-btn float-mid-left admin-only" onclick="openMemberModal(6)">Editar</button>
             <img class="av" src="assets/integrantes/foto-perfil-07.webp" alt="Foto de Heloísa Costa Reis" width="400" height="400" loading="lazy" decoding="async">
             <b>Heloísa Costa Reis</b>
             <small>1ª Diretora de Ensino · Turma 13 – 2º período</small>
@@ -233,6 +252,7 @@ body.admin-mode .admin-block{display:block !important}
         </div><div class="person">
             <button class="adm-badge-btn danger float-top-left admin-only" onclick="deleteMember(7)">X</button>
             <button class="adm-badge-btn float-top-right admin-only" onclick="triggerPhotoEdit(7)">Foto</button>
+            <button class="adm-badge-btn float-mid-left admin-only" onclick="openMemberModal(7)">Editar</button>
             <img class="av" src="assets/integrantes/foto-perfil-08.webp" alt="Foto de Amona Rocha Prates Alves" width="400" height="400" loading="lazy" decoding="async">
             <b>Amona Rocha Prates Alves</b>
             <small>2ª Diretora de Ensino · Turma 8 – 7º período</small>
@@ -240,6 +260,7 @@ body.admin-mode .admin-block{display:block !important}
         </div><div class="person">
             <button class="adm-badge-btn danger float-top-left admin-only" onclick="deleteMember(8)">X</button>
             <button class="adm-badge-btn float-top-right admin-only" onclick="triggerPhotoEdit(8)">Foto</button>
+            <button class="adm-badge-btn float-mid-left admin-only" onclick="openMemberModal(8)">Editar</button>
             <img class="av" src="assets/integrantes/foto-perfil-09.webp" alt="Foto de José Guilherme Lacerda Lima" width="400" height="400" loading="lazy" decoding="async">
             <b>José Guilherme Lacerda Lima</b>
             <small>1º Diretor de Pesquisa · Turma 7 – 8º período</small>
@@ -247,6 +268,7 @@ body.admin-mode .admin-block{display:block !important}
         </div><div class="person">
             <button class="adm-badge-btn danger float-top-left admin-only" onclick="deleteMember(9)">X</button>
             <button class="adm-badge-btn float-top-right admin-only" onclick="triggerPhotoEdit(9)">Foto</button>
+            <button class="adm-badge-btn float-mid-left admin-only" onclick="openMemberModal(9)">Editar</button>
             <img class="av" src="assets/integrantes/foto-perfil-10.webp" alt="Foto de Luan de Souza Lessa" width="400" height="400" loading="lazy" decoding="async">
             <b>Luan de Souza Lessa</b>
             <small>2º Diretor de Pesquisa · Turma 8 – 7º período</small>
@@ -254,6 +276,7 @@ body.admin-mode .admin-block{display:block !important}
         </div><div class="person">
             <button class="adm-badge-btn danger float-top-left admin-only" onclick="deleteMember(10)">X</button>
             <button class="adm-badge-btn float-top-right admin-only" onclick="triggerPhotoEdit(10)">Foto</button>
+            <button class="adm-badge-btn float-mid-left admin-only" onclick="openMemberModal(10)">Editar</button>
             <img class="av" src="assets/integrantes/foto-perfil-11.webp" alt="Foto de Maria Paula Barros Jota" width="400" height="400" loading="lazy" decoding="async">
             <b>Maria Paula Barros Jota</b>
             <small>1ª Diretora de Marketing · Turma 12 – 3º período</small>
@@ -261,18 +284,19 @@ body.admin-mode .admin-block{display:block !important}
         </div><div class="person">
             <button class="adm-badge-btn danger float-top-left admin-only" onclick="deleteMember(11)">X</button>
             <button class="adm-badge-btn float-top-right admin-only" onclick="triggerPhotoEdit(11)">Foto</button>
+            <button class="adm-badge-btn float-mid-left admin-only" onclick="openMemberModal(11)">Editar</button>
             <img class="av" src="assets/integrantes/foto-perfil-12.webp" alt="Foto de Iscila Emiliane Pereira" width="400" height="400" loading="lazy" decoding="async">
             <b>Iscila Emiliane Pereira</b>
             <small>2ª Diretora de Marketing · Turma 10 – 5º período</small>
             <br><a class="lattes" href="https://lattes.cnpq.br/4043363628606041" target="_blank" rel="noopener">Currículo Lattes ↗</a>
         </div></div></div></section>
-
+ 
 <section id="galeria" hidden=""><div class="wrap"><h2>Momentos da chapa</h2><div class="gal" id="gal"></div></div></section>
-
+ 
 <section id="escuta" class="dark-band">
     <div class="wrap">
-        <h2>Escuta: o que você quer ver no seu CA?</h2>
-        <p>Toda demanda recebe retorno. Ela chega direto para a diretoria da chapa; deixe seu e-mail se quiser resposta individual.</p>
+        <h2 data-edit="escuta_titulo">Escuta: o que você quer ver no seu CA?</h2>
+        <p data-edit="escuta_texto">Toda demanda recebe retorno. Ela chega direto para a diretoria da chapa; deixe seu e-mail se quiser resposta individual.</p>
         <form id="f">
             <label>Seu nome (opcional)<input id="fn" name="nome" autocomplete="name"></label>
             <label>Turma/Período (opcional)<input id="fp" name="periodo" placeholder="Ex.: Turma 10 – 5º período"></label>
@@ -292,13 +316,13 @@ body.admin-mode .admin-block{display:block !important}
         </form>
     </div>
 </section>
-
-<footer><div class="wrap">Chapa Acadêmica Dr. Ângelo Machado · CAMFF · Afya Guanambi<br>Gestão 2027.1/2027.2 · Guanambi, Bahia<span id="ig"></span></div></footer>
-
+ 
+<footer><div class="wrap"><span data-edit="rodape_1">Chapa Acadêmica Dr. Ângelo Machado · CAMFF · Afya Guanambi</span><br><span data-edit="rodape_2">Gestão 2027.1/2027.2 · Guanambi, Bahia</span><span id="ig"></span></div></footer>
+ 
 <script id="site-config-script">
 const ADMIN_USER = "admin";
 const ADMIN_PASS = "Angelo@2026";
-
+ 
 let CFG = {
     "nome": "Chapa Dr. Ângelo Machado",
     "logoImg": "assets/logo.webp",
@@ -452,17 +476,17 @@ let CFG = {
         ]
     ]
 };
-
+ 
 // Carrega alterações locais se existirem
 const savedData = localStorage.getItem("ang_machado_v3");
 if (savedData) {
     try { CFG = JSON.parse(savedData); } catch(e) {}
 }
-
+ 
 const $ = s => document.querySelector(s);
 document.title = CFG.nome + " — CA de Medicina";
 $("#nm").textContent = CFG.nome;
-
+ 
 // Renderizar Logo
 function renderLogo() {
     const wrap = $("#logo-wrapper");
@@ -473,7 +497,7 @@ function renderLogo() {
     }
 }
 renderLogo();
-
+ 
 // Renderizar Propostas
 let currentArea = Object.keys(CFG.propostas)[0];
 function renderTabs() {
@@ -489,7 +513,7 @@ function renderTabs() {
         tabsEl.append(b);
     });
 }
-
+ 
 function renderPanel() {
     const list = CFG.propostas[currentArea] || [];
     $("#panel").innerHTML = list.map((p, idx) => `
@@ -498,33 +522,85 @@ function renderPanel() {
                 <button class="adm-badge-btn" onclick="openProposalModal('${currentArea}', ${idx})">Editar</button>
                 <button class="adm-badge-btn danger" onclick="deleteProposal('${currentArea}', ${idx})">Excluir</button>
             </div>
-            <strong>${p[0]}</strong>
-            <span>${p[1]}</span>
+            <strong>${esc(p[0])}</strong>
+            <span>${esc(p[1])}</span>
         </div>
     `).join("");
 }
 renderTabs();
 renderPanel();
-
+ 
 // Renderizar Equipe
 function renderTeam() {
     $("#membros-lista").innerHTML = CFG.equipe.map((p, i) => {
         let avatarHTML = p[3] 
-            ? `<img class="av" src="${p[3]}" alt="Foto de ${p[0]}" width="400" height="400" loading="lazy" decoding="async" onerror="this.outerHTML='<div class=&quot;av&quot; aria-hidden=&quot;true&quot; style=&quot;background:#9bd8ff&quot;>${p[0][0]}</div>'">` 
-            : `<div class="av" aria-hidden="true" style="background:${["#9bd8ff","#19c8f0","#cfe8ff"][i%3]}">${p[0][0]}</div>`;
+            ? `<img class="av" src="${p[3]}" alt="Foto de ${esc(p[0])}" width="400" height="400" loading="lazy" decoding="async" onerror="this.outerHTML='<div class=&quot;av&quot; aria-hidden=&quot;true&quot; style=&quot;background:#9bd8ff&quot;>${esc(p[0][0])}</div>'">` 
+            : `<div class="av" aria-hidden="true" style="background:${["#9bd8ff","#19c8f0","#cfe8ff"][i%3]}">${esc(p[0][0])}</div>`;
         
         return `<div class="person">
             <button class="adm-badge-btn danger float-top-left admin-only" onclick="deleteMember(${i})">X</button>
             <button class="adm-badge-btn float-top-right admin-only" onclick="triggerPhotoEdit(${i})">Foto</button>
+            <button class="adm-badge-btn float-mid-left admin-only" onclick="openMemberModal(${i})">Editar</button>
             ${avatarHTML}
-            <b>${p[0]}</b>
-            <small>${p[1]} · ${p[2]}</small>
-            ${p[4] ? `<br><a class="lattes" href="${p[4]}" target="_blank" rel="noopener">Currículo Lattes ↗</a>` : ""}
+            <b>${esc(p[0])}</b>
+            <small>${esc(p[1])} · ${esc(p[2])}</small>
+            ${p[4] ? `<br><a class="lattes" href="${esc(p[4])}" target="_blank" rel="noopener">Currículo Lattes ↗</a>` : ""}
         </div>`;
     }).join("");
 }
 renderTeam();
-
+ 
+// ==========================================
+// EDIÇÃO DE TEXTOS DO SITE (modo admin)
+// ==========================================
+function esc(v) {
+    return String(v == null ? "" : v).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+}
+CFG.textos = CFG.textos || {};
+function applyTextos() {
+    document.querySelectorAll("[data-edit]").forEach(el => {
+        const k = el.dataset.edit;
+        if (k !== "nome" && CFG.textos[k] !== undefined) el.textContent = CFG.textos[k];
+    });
+}
+applyTextos();
+function setEditable(on) {
+    document.querySelectorAll("[data-edit]").forEach(el => {
+        if (on) { el.setAttribute("contenteditable", "true"); el.setAttribute("spellcheck", "true"); }
+        else { el.removeAttribute("contenteditable"); el.removeAttribute("spellcheck"); }
+    });
+}
+function inAdminEdit(e) {
+    return document.body.classList.contains("admin-mode") && e.target.closest && e.target.closest("[data-edit]");
+}
+document.addEventListener("input", e => {
+    const el = inAdminEdit(e);
+    if (!el) return;
+    const v = el.textContent.replace(/\s+/g, " ").trim();
+    if (el.dataset.edit === "nome") { CFG.nome = v; document.title = v + " — CA de Medicina"; }
+    else { CFG.textos[el.dataset.edit] = v; }
+    saveLocal();
+});
+document.addEventListener("keydown", e => {
+    if (e.key === "Enter" && inAdminEdit(e)) { e.preventDefault(); e.target.blur(); }
+});
+document.addEventListener("paste", e => {
+    if (!inAdminEdit(e)) return;
+    e.preventDefault();
+    const t = (e.clipboardData || window.clipboardData).getData("text/plain").replace(/\s+/g, " ");
+    document.execCommand("insertText", false, t);
+});
+document.addEventListener("click", e => {
+    const el = inAdminEdit(e);
+    if (el && el.closest("a")) e.preventDefault();
+}, true);
+function resetTextos() {
+    if (!confirm("Restaurar os textos fixos (títulos, parágrafos, botões, rodapé) para os do arquivo publicado? Propostas e equipe não mudam.")) return;
+    CFG.textos = {};
+    saveLocal();
+    location.reload();
+}
+ 
 // ==========================================
 // CONTROLE DO MODO ADMINISTRADOR (#admin)
 // ==========================================
@@ -539,12 +615,12 @@ function checkAdminRoute() {
 }
 window.addEventListener("hashchange", checkAdminRoute);
 checkAdminRoute();
-
+ 
 function closeLoginModal() {
     $("#admin-login-modal").style.display = "none";
     history.replaceState(null, null, window.location.pathname);
 }
-
+ 
 function doLogin() {
     if ($("#adm-u").value.trim() === ADMIN_USER && $("#adm-p").value === ADMIN_PASS) {
         sessionStorage.setItem("is_adm", "true");
@@ -555,34 +631,36 @@ function doLogin() {
         $("#adm-err").style.display = "block";
     }
 }
-
+ 
 function enableAdminMode() {
     document.body.classList.add("admin-mode");
+    setEditable(true);
     $("#admin-toolbar").style.display = "flex";
     updateDemandasCount();
 }
-
+ 
 function logoutAdmin() {
     sessionStorage.removeItem("is_adm");
     document.body.classList.remove("admin-mode");
+    setEditable(false);
     $("#admin-toolbar").style.display = "none";
     history.replaceState(null, null, window.location.pathname);
 }
-
+ 
 function openModal(id) { $("#" + id).style.display = "flex"; }
 function closeModal(id) { $("#" + id).style.display = "none"; }
-
+ 
 // Upload de Imagens (Logo ou Membro)
 let uploadMode = "member";
 let editingMemberIdx = null;
-
+ 
 function triggerLogoEdit() {
     uploadMode = "logo";
     let inp = $("#hidden-img-input");
     inp.value = "";
     inp.click();
 }
-
+ 
 function triggerPhotoEdit(idx) {
     uploadMode = "member";
     editingMemberIdx = idx;
@@ -590,7 +668,7 @@ function triggerPhotoEdit(idx) {
     inp.value = "";
     inp.click();
 }
-
+ 
 $("#hidden-img-input").onchange = function(e) {
     let file = e.target.files[0];
     if(!file) return;
@@ -605,32 +683,50 @@ $("#hidden-img-input").onchange = function(e) {
         saveLocal();
     });
 };
-
+ 
 // Membros
+var editingMemberFull = null;
+function openMemberModal(idx) {
+    const isEdit = (typeof idx === "number");
+    editingMemberFull = isEdit ? idx : null;
+    const m = isEdit ? CFG.equipe[idx] : ["", "", "", "", ""];
+    $("#member-modal-title").textContent = isEdit ? "Editar Membro" : "Adicionar Membro";
+    $("#m-name").value = m[0]; $("#m-role").value = m[1];
+    $("#m-period").value = isEdit ? m[2] : ""; $("#m-lattes").value = m[4] || "";
+    $("#m-file").value = "";
+    openModal("add-member-modal");
+}
 function saveNewMember() {
     let name = $("#m-name").value.trim();
     let role = $("#m-role").value.trim();
     let period = $("#m-period").value.trim();
     let lattes = $("#m-lattes").value.trim();
     let fileInput = $("#m-file");
-
+ 
     if(!name || !role) return alert("Preencha o nome e o cargo.");
-
+ 
     let done = (imgData) => {
-        CFG.equipe.push([name, role, period || "Membro", imgData, lattes]);
+        if (editingMemberFull !== null) {
+            const m = CFG.equipe[editingMemberFull];
+            m[0] = name; m[1] = role; m[2] = period || "Membro"; m[4] = lattes;
+            if (imgData) m[3] = imgData;
+            editingMemberFull = null;
+        } else {
+            CFG.equipe.push([name, role, period || "Membro", imgData, lattes]);
+        }
         saveLocal();
         renderTeam();
         closeModal("add-member-modal");
         $("#m-name").value = ""; $("#m-role").value = ""; $("#m-period").value = ""; $("#m-lattes").value = ""; fileInput.value = "";
     };
-
+ 
     if(fileInput.files && fileInput.files[0]) {
         compressImage(fileInput.files[0], 500, done);
     } else {
         done("");
     }
 }
-
+ 
 function deleteMember(idx) {
     if(confirm(`Remover ${CFG.equipe[idx][0]}?`)) {
         CFG.equipe.splice(idx, 1);
@@ -638,12 +734,44 @@ function deleteMember(idx) {
         renderTeam();
     }
 }
-
+ 
+// Abas de propostas (renomear / criar / excluir)
+function cleanName(v) { return (v || "").replace(/['"\\<>]/g, "").trim(); }
+function refreshCatSelect() {
+    const sel = $("#p-cat");
+    sel.innerHTML = "";
+    Object.keys(CFG.propostas).forEach(k => { const o = document.createElement("option"); o.value = k; o.textContent = k; sel.append(o); });
+}
+function renameArea() {
+    const novo = cleanName(prompt('Novo nome para a aba "' + currentArea + '":', currentArea));
+    if (!novo || novo === currentArea) return;
+    if (CFG.propostas[novo]) return alert("Já existe uma aba com esse nome.");
+    const n = {};
+    Object.keys(CFG.propostas).forEach(k => { n[k === currentArea ? novo : k] = CFG.propostas[k]; });
+    CFG.propostas = n; currentArea = novo;
+    saveLocal(); renderTabs(); renderPanel();
+}
+function newArea() {
+    const novo = cleanName(prompt("Nome da nova aba:"));
+    if (!novo) return;
+    if (CFG.propostas[novo]) return alert("Já existe uma aba com esse nome.");
+    CFG.propostas[novo] = []; currentArea = novo;
+    saveLocal(); renderTabs(); renderPanel();
+}
+function deleteArea() {
+    if (Object.keys(CFG.propostas).length < 2) return alert("O site precisa ter pelo menos uma aba.");
+    if (!confirm('Excluir a aba "' + currentArea + '" e todas as suas propostas?')) return;
+    delete CFG.propostas[currentArea];
+    currentArea = Object.keys(CFG.propostas)[0];
+    saveLocal(); renderTabs(); renderPanel();
+}
+ 
 // Propostas (Adicionar / Editar / Excluir)
 let editPropCat = null;
 let editPropIdx = null;
-
+ 
 function openProposalModal(cat = null, idx = null) {
+    refreshCatSelect();
     editPropCat = cat;
     editPropIdx = idx;
     if (cat !== null && idx !== null) {
@@ -661,13 +789,13 @@ function openProposalModal(cat = null, idx = null) {
     }
     openModal("proposal-modal");
 }
-
+ 
 function saveProposal() {
     let cat = $("#p-cat").value;
     let title = $("#p-title").value.trim();
     let desc = $("#p-desc").value.trim();
     if (!title || !desc) return alert("Preencha o título e a descrição.");
-
+ 
     if (editPropCat !== null && editPropIdx !== null) {
         CFG.propostas[editPropCat][editPropIdx] = [title, desc];
     } else {
@@ -680,7 +808,7 @@ function saveProposal() {
     renderPanel();
     closeModal("proposal-modal");
 }
-
+ 
 function deleteProposal(cat, idx) {
     if (confirm("Excluir esta proposta?")) {
         CFG.propostas[cat].splice(idx, 1);
@@ -688,18 +816,18 @@ function deleteProposal(cat, idx) {
         renderPanel();
     }
 }
-
+ 
 // ==========================================
 // ESCUTA E CAIXA DE ENTRADA (APENAS ADMIN)
 // ==========================================
 function getDemandas() {
     try { return JSON.parse(localStorage.getItem("ang_demandas_inbox") || "[]"); } catch { return []; }
 }
-
+ 
 function updateDemandasCount() {
     $("#dem-count").textContent = getDemandas().length;
 }
-
+ 
 function openDemandasModal() {
     $("#formspree-url").value = CFG.formEndpoint || "";
     const list = getDemandas();
@@ -710,25 +838,25 @@ function openDemandasModal() {
         container.innerHTML = list.map(d => `
             <div class="demanda-card">
                 <div style="display:flex; justify-content:space-between; font-size:0.8rem; color:var(--muted); margin-bottom:4px;">
-                    <b>${d.assunto}</b>
-                    <span>${d.data}</span>
+                    <b>${esc(d.assunto)}</b>
+                    <span>${esc(d.data)}</span>
                 </div>
-                <p style="margin:4px 0 8px;">${d.demanda}</p>
+                <p style="margin:4px 0 8px;">${esc(d.demanda)}</p>
                 <div style="font-size:0.8rem; color:var(--muted);">
-                    👤 ${d.nome || "Anônimo"} | 🎓 ${d.periodo || "Não informado"} | ✉️ ${d.email || "Sem e-mail"}
+                    👤 ${esc(d.nome) || "Anônimo"} | 🎓 ${esc(d.periodo) || "Não informado"} | ✉️ ${esc(d.email) || "Sem e-mail"}
                 </div>
             </div>
         `).join("");
     }
     openModal("demandas-modal");
 }
-
+ 
 function saveFormspreeUrl() {
     CFG.formEndpoint = $("#formspree-url").value.trim();
     saveLocal();
     alert("Link salvo! Lembre-se de clicar em 'Baixar HTML Atualizado' e subir no GitHub para ativar para todos os visitantes.");
 }
-
+ 
 function clearDemandas() {
     if (confirm("Limpar todas as mensagens salvas neste navegador?")) {
         localStorage.removeItem("ang_demandas_inbox");
@@ -736,13 +864,13 @@ function clearDemandas() {
         openDemandasModal();
     }
 }
-
+ 
 $("#f").onsubmit = async e => {
     e.preventDefault();
     const btn = e.target.querySelector("button"), ok = $("#fok");
     btn.disabled = true;
     ok.textContent = "Enviando…";
-
+ 
     const payload = {
         nome: $("#fn").value.trim(),
         periodo: $("#fp").value.trim(),
@@ -751,13 +879,13 @@ $("#f").onsubmit = async e => {
         demanda: $("#fm").value.trim(),
         data: new Date().toLocaleString("pt-BR")
     };
-
+ 
     // 1. Salva no armazenamento local (visível no painel ADM deste dispositivo)
     const inbox = getDemandas();
     inbox.unshift(payload);
     localStorage.setItem("ang_demandas_inbox", JSON.stringify(inbox));
     updateDemandasCount();
-
+ 
     // 2. Se o link do Formspree estiver configurado, envia para o e-mail da diretoria
     if (CFG.formEndpoint) {
         try {
@@ -773,12 +901,12 @@ $("#f").onsubmit = async e => {
             return;
         }
     }
-
+ 
     e.target.reset();
     ok.textContent = "Demanda enviada! Obrigado por participar — a diretoria vai analisar e dar retorno.";
     btn.disabled = false;
 };
-
+ 
 // Utilitários de Compressão e Exportação
 function compressImage(file, maxW, callback) {
     let reader = new FileReader();
@@ -796,20 +924,21 @@ function compressImage(file, maxW, callback) {
     };
     reader.readAsDataURL(file);
 }
-
+ 
 function saveLocal() {
     localStorage.setItem("ang_machado_v3", JSON.stringify(CFG));
 }
-
+ 
 function exportHTML() {
     let clone = document.documentElement.cloneNode(true);
     clone.querySelector("body").classList.remove("admin-mode");
+    clone.querySelectorAll("[contenteditable]").forEach(el => { el.removeAttribute("contenteditable"); el.removeAttribute("spellcheck"); });
     clone.querySelector("#admin-toolbar").style.display = "none";
     clone.querySelectorAll(".modal-backdrop").forEach(m => m.style.display = "none");
-
+ 
     let scriptEl = clone.querySelector("#site-config-script");
-    scriptEl.innerHTML = scriptEl.innerHTML.replace(/let CFG = \{[\s\S]*?\};/, `let CFG = ${JSON.stringify(CFG, null, 4)};`);
-
+    scriptEl.innerHTML = scriptEl.innerHTML.replace(/let CFG = \{[\s\S]*?\};/, () => "let CFG = " + JSON.stringify(CFG, null, 4).replace(/</g, "\\u003c") + ";");
+ 
     let blob = new Blob(["<!DOCTYPE html>\n" + clone.outerHTML], { type: "text/html;charset=utf-8" });
     let url = URL.createObjectURL(blob);
     let a = document.createElement("a");
@@ -819,7 +948,7 @@ function exportHTML() {
     URL.revokeObjectURL(url);
 }
 </script>
-
-
-
+ 
+ 
+ 
 </body></html>
