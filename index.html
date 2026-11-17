@@ -41,7 +41,7 @@ body.admin-mode .admin-block{display:block !important}
     <div style="display:flex; gap:8px; flex-wrap:wrap;">
         <button class="btn" style="padding:6px 12px; font-size:0.8rem;" onclick="openMemberModal()">+ Membro</button>
         <button class="btn" style="padding:6px 12px; font-size:0.8rem;" onclick="openProposalModal()">+ Proposta</button>
-        <button class="btn" style="padding:6px 12px; font-size:0.8rem; border-color:var(--mint); color:var(--mint);" onclick="openDemandasModal()">📥 Ver Demandas (<span id="dem-count">0</span>)</button>
+        <button class="btn" style="padding:6px 12px; font-size:0.8rem; border-color:var(--mint); color:var(--mint);" onclick="openDemandasModal()">📥 Ver Demandas (<span id="dem-count">1</span>)</button>
         <button class="btn p" style="padding:6px 12px; font-size:0.8rem;" onclick="exportHTML()">💾 Baixar HTML Atualizado</button>
         <button class="btn" style="padding:6px 12px; font-size:0.8rem;" onclick="resetTextos()">↩ Restaurar textos</button>
         <button class="btn" style="padding:6px 12px; font-size:0.8rem; background:#e74c3c; border-color:#e74c3c; color:#fff;" onclick="logoutAdmin()">Sair</button>
@@ -148,7 +148,7 @@ body.admin-mode .admin-block{display:block !important}
     </div>
 </header>
  
-<section id="sobre"><div class="wrap"><h2 data-edit="sobre_titulo">Quem somos</h2><div class="about"><p data-edit="sobre_p1">Somos estudantes de Medicina que querem uma gestão democrática, participativa, transparente e acessível, pautada no diálogo e na responsabilidade.</p><p data-edit="sobre_p2">O nome Dr. Ângelo Machado homenageia um médico, professor e pesquisador brasileiro, referência na educação médica e na ciência.</p><p data-edit="sobre_p3">Nosso compromisso: fortalecer ensino, pesquisa e extensão, ouvir todas as turmas e dar retorno a cada demanda.</p></div></div></section>
+<section id="sobre"><div class="wrap"><h2 data-edit="sobre_titulo">Quem somos</h2><div class="about"><p data-edit="sobre_p1">A Chapa Acadêmica Dr. Ângelo Machado nasce da união de 12 estudantes de Medicina da Afya Faculdade de Ciências Médicas de Guanambi, de diferentes períodos, turmas e trajetórias, mas com um propósito em comum: transformar o Centro Acadêmico Dr. Francisco Fernandes (CAMFF) em um espaço de voz, de formação e de oportunidades para cada acadêmico. Do 1º ao 8º período, estamos em todas as etapas da graduação. Isso nos permite conhecer de perto as dores de quem acabou de chegar e os desafios de quem já se aproxima do internato. Nossa composição nos coloca para ouvir, entender e representar todos os períodos.</p><p data-edit="sobre_p2">O nome da chapa é uma homenagem a um médico, professor e pesquisador brasileiro, referência na educação médica e na ciência. Ele inspira nossos valores: formar médicos competentes, curiosos, comprometidos com o conhecimento e com a sociedade.</p><p data-edit="sobre_p3">Nosso pilares: Ensino, pesquisa, extensão, integração acadêmica e representação estudantil. Esses cinco eixos sustentam as 12 propostas que apresentamos, pensadas para contemplar todos os períodos do curso. Nos comprometemos a atuar com ética, diálogo e responsabilidade, respeitando as diferentes opiniões e valorizando o conhecimento científico. Acreditamos que um Centro Acadêmico forte é aquele em que todos se sentem ouvidos, representados e convidados a participar.</p></div></div></section>
  
 <section id="propostas">
     <div class="wrap">
@@ -197,7 +197,7 @@ body.admin-mode .admin-block{display:block !important}
             <button class="adm-badge-btn danger float-top-left admin-only" onclick="deleteMember(0)">X</button>
             <button class="adm-badge-btn float-top-right admin-only" onclick="triggerPhotoEdit(0)">Foto</button>
             <button class="adm-badge-btn float-mid-left admin-only" onclick="openMemberModal(0)">Editar</button>
-            <img class="av" src="assets/integrantes/foto-perfil-01.webp" alt="Foto de Luna Afonso Batista Costa" width="400" height="400" loading="lazy" decoding="async">
+            <img class="av" src="assets/integrantes/foto-perfil-01.webp" alt="Foto de Luna Afonso Batista Costa" width="400" height="400" loading="lazy" decoding="async" onerror="this.outerHTML='&lt;div class=&quot;av&quot; aria-hidden=&quot;true&quot; style=&quot;background:#9bd8ff&quot;&gt;L&lt;/div&gt;'">
             <b>Luna Afonso Batista Costa</b>
             <small>Presidente · Turma 9 – 6º período</small>
             <br><a class="lattes" href="http://lattes.cnpq.br/6565299103287386" target="_blank" rel="noopener">Currículo Lattes ↗</a>
@@ -205,7 +205,7 @@ body.admin-mode .admin-block{display:block !important}
             <button class="adm-badge-btn danger float-top-left admin-only" onclick="deleteMember(1)">X</button>
             <button class="adm-badge-btn float-top-right admin-only" onclick="triggerPhotoEdit(1)">Foto</button>
             <button class="adm-badge-btn float-mid-left admin-only" onclick="openMemberModal(1)">Editar</button>
-            <img class="av" src="assets/integrantes/foto-perfil-02.webp" alt="Foto de Geise Ketle Ribeiro Cotrim" width="400" height="400" loading="lazy" decoding="async">
+            <img class="av" src="assets/integrantes/foto-perfil-02.webp" alt="Foto de Geise Ketle Ribeiro Cotrim" width="400" height="400" loading="lazy" decoding="async" onerror="this.outerHTML='&lt;div class=&quot;av&quot; aria-hidden=&quot;true&quot; style=&quot;background:#9bd8ff&quot;&gt;G&lt;/div&gt;'">
             <b>Geise Ketle Ribeiro Cotrim</b>
             <small>Vice-presidente · Turma 7 – 8º período</small>
             <br><a class="lattes" href="http://lattes.cnpq.br/3206026745552348" target="_blank" rel="noopener">Currículo Lattes ↗</a>
@@ -213,7 +213,7 @@ body.admin-mode .admin-block{display:block !important}
             <button class="adm-badge-btn danger float-top-left admin-only" onclick="deleteMember(2)">X</button>
             <button class="adm-badge-btn float-top-right admin-only" onclick="triggerPhotoEdit(2)">Foto</button>
             <button class="adm-badge-btn float-mid-left admin-only" onclick="openMemberModal(2)">Editar</button>
-            <img class="av" src="assets/integrantes/foto-perfil-03.webp" alt="Foto de Paloma Bianca Costa Teixeira" width="400" height="400" loading="lazy" decoding="async">
+            <img class="av" src="assets/integrantes/foto-perfil-03.webp" alt="Foto de Paloma Bianca Costa Teixeira" width="400" height="400" loading="lazy" decoding="async" onerror="this.outerHTML='&lt;div class=&quot;av&quot; aria-hidden=&quot;true&quot; style=&quot;background:#9bd8ff&quot;&gt;P&lt;/div&gt;'">
             <b>Paloma Bianca Costa Teixeira</b>
             <small>1ª Secretária · 8º período</small>
             <br><a class="lattes" href="http://lattes.cnpq.br/1355279913662870" target="_blank" rel="noopener">Currículo Lattes ↗</a>
@@ -221,7 +221,7 @@ body.admin-mode .admin-block{display:block !important}
             <button class="adm-badge-btn danger float-top-left admin-only" onclick="deleteMember(3)">X</button>
             <button class="adm-badge-btn float-top-right admin-only" onclick="triggerPhotoEdit(3)">Foto</button>
             <button class="adm-badge-btn float-mid-left admin-only" onclick="openMemberModal(3)">Editar</button>
-            <img class="av" src="assets/integrantes/foto-perfil-04.webp" alt="Foto de Mariana Vitória Queiroz Pereira Vitorino" width="400" height="400" loading="lazy" decoding="async">
+            <img class="av" src="assets/integrantes/foto-perfil-04.webp" alt="Foto de Mariana Vitória Queiroz Pereira Vitorino" width="400" height="400" loading="lazy" decoding="async" onerror="this.outerHTML='&lt;div class=&quot;av&quot; aria-hidden=&quot;true&quot; style=&quot;background:#9bd8ff&quot;&gt;M&lt;/div&gt;'">
             <b>Mariana Vitória Queiroz Pereira Vitorino</b>
             <small>2ª Secretária · Turma 14 – 1º período</small>
             <br><a class="lattes" href="http://lattes.cnpq.br/8202840030436804" target="_blank" rel="noopener">Currículo Lattes ↗</a>
@@ -229,7 +229,7 @@ body.admin-mode .admin-block{display:block !important}
             <button class="adm-badge-btn danger float-top-left admin-only" onclick="deleteMember(4)">X</button>
             <button class="adm-badge-btn float-top-right admin-only" onclick="triggerPhotoEdit(4)">Foto</button>
             <button class="adm-badge-btn float-mid-left admin-only" onclick="openMemberModal(4)">Editar</button>
-            <img class="av" src="assets/integrantes/foto-perfil-05.webp" alt="Foto de Herbert Augusto Fernandes Souza" width="400" height="400" loading="lazy" decoding="async">
+            <img class="av" src="assets/integrantes/foto-perfil-05.webp" alt="Foto de Herbert Augusto Fernandes Souza" width="400" height="400" loading="lazy" decoding="async" onerror="this.outerHTML='&lt;div class=&quot;av&quot; aria-hidden=&quot;true&quot; style=&quot;background:#9bd8ff&quot;&gt;H&lt;/div&gt;'">
             <b>Herbert Augusto Fernandes Souza</b>
             <small>1º Tesoureiro · Turma 7 – 8º período</small>
             <br><a class="lattes" href="https://lattes.cnpq.br/0169141166428474" target="_blank" rel="noopener">Currículo Lattes ↗</a>
@@ -237,7 +237,7 @@ body.admin-mode .admin-block{display:block !important}
             <button class="adm-badge-btn danger float-top-left admin-only" onclick="deleteMember(5)">X</button>
             <button class="adm-badge-btn float-top-right admin-only" onclick="triggerPhotoEdit(5)">Foto</button>
             <button class="adm-badge-btn float-mid-left admin-only" onclick="openMemberModal(5)">Editar</button>
-            <img class="av" src="assets/integrantes/foto-perfil-06.webp" alt="Foto de Ana Luiza dos Santos Barbosa" width="400" height="400" loading="lazy" decoding="async">
+            <img class="av" src="assets/integrantes/foto-perfil-06.webp" alt="Foto de Ana Luiza dos Santos Barbosa" width="400" height="400" loading="lazy" decoding="async" onerror="this.outerHTML='&lt;div class=&quot;av&quot; aria-hidden=&quot;true&quot; style=&quot;background:#9bd8ff&quot;&gt;A&lt;/div&gt;'">
             <b>Ana Luiza dos Santos Barbosa</b>
             <small>2ª Tesoureira · Turma 11 – 4º período</small>
             <br><a class="lattes" href="http://lattes.cnpq.br/3125942443973253" target="_blank" rel="noopener">Currículo Lattes ↗</a>
@@ -245,7 +245,7 @@ body.admin-mode .admin-block{display:block !important}
             <button class="adm-badge-btn danger float-top-left admin-only" onclick="deleteMember(6)">X</button>
             <button class="adm-badge-btn float-top-right admin-only" onclick="triggerPhotoEdit(6)">Foto</button>
             <button class="adm-badge-btn float-mid-left admin-only" onclick="openMemberModal(6)">Editar</button>
-            <img class="av" src="assets/integrantes/foto-perfil-07.webp" alt="Foto de Heloísa Costa Reis" width="400" height="400" loading="lazy" decoding="async">
+            <img class="av" src="assets/integrantes/foto-perfil-07.webp" alt="Foto de Heloísa Costa Reis" width="400" height="400" loading="lazy" decoding="async" onerror="this.outerHTML='&lt;div class=&quot;av&quot; aria-hidden=&quot;true&quot; style=&quot;background:#9bd8ff&quot;&gt;H&lt;/div&gt;'">
             <b>Heloísa Costa Reis</b>
             <small>1ª Diretora de Ensino · Turma 13 – 2º período</small>
             <br><a class="lattes" href="http://lattes.cnpq.br/4693564052537553" target="_blank" rel="noopener">Currículo Lattes ↗</a>
@@ -253,7 +253,7 @@ body.admin-mode .admin-block{display:block !important}
             <button class="adm-badge-btn danger float-top-left admin-only" onclick="deleteMember(7)">X</button>
             <button class="adm-badge-btn float-top-right admin-only" onclick="triggerPhotoEdit(7)">Foto</button>
             <button class="adm-badge-btn float-mid-left admin-only" onclick="openMemberModal(7)">Editar</button>
-            <img class="av" src="assets/integrantes/foto-perfil-08.webp" alt="Foto de Amona Rocha Prates Alves" width="400" height="400" loading="lazy" decoding="async">
+            <img class="av" src="assets/integrantes/foto-perfil-08.webp" alt="Foto de Amona Rocha Prates Alves" width="400" height="400" loading="lazy" decoding="async" onerror="this.outerHTML='&lt;div class=&quot;av&quot; aria-hidden=&quot;true&quot; style=&quot;background:#9bd8ff&quot;&gt;A&lt;/div&gt;'">
             <b>Amona Rocha Prates Alves</b>
             <small>2ª Diretora de Ensino · Turma 8 – 7º período</small>
             <br><a class="lattes" href="https://wwws.cnpq.br/cvlattesweb/PKG_MENU.menu?f_cod=D3F72EEAFD65A08F598F364F11559716" target="_blank" rel="noopener">Currículo Lattes ↗</a>
@@ -261,7 +261,7 @@ body.admin-mode .admin-block{display:block !important}
             <button class="adm-badge-btn danger float-top-left admin-only" onclick="deleteMember(8)">X</button>
             <button class="adm-badge-btn float-top-right admin-only" onclick="triggerPhotoEdit(8)">Foto</button>
             <button class="adm-badge-btn float-mid-left admin-only" onclick="openMemberModal(8)">Editar</button>
-            <img class="av" src="assets/integrantes/foto-perfil-09.webp" alt="Foto de José Guilherme Lacerda Lima" width="400" height="400" loading="lazy" decoding="async">
+            <img class="av" src="assets/integrantes/foto-perfil-09.webp" alt="Foto de José Guilherme Lacerda Lima" width="400" height="400" loading="lazy" decoding="async" onerror="this.outerHTML='&lt;div class=&quot;av&quot; aria-hidden=&quot;true&quot; style=&quot;background:#9bd8ff&quot;&gt;J&lt;/div&gt;'">
             <b>José Guilherme Lacerda Lima</b>
             <small>1º Diretor de Pesquisa · Turma 7 – 8º período</small>
             <br><a class="lattes" href="http://lattes.cnpq.br/8983904593573609" target="_blank" rel="noopener">Currículo Lattes ↗</a>
@@ -269,7 +269,7 @@ body.admin-mode .admin-block{display:block !important}
             <button class="adm-badge-btn danger float-top-left admin-only" onclick="deleteMember(9)">X</button>
             <button class="adm-badge-btn float-top-right admin-only" onclick="triggerPhotoEdit(9)">Foto</button>
             <button class="adm-badge-btn float-mid-left admin-only" onclick="openMemberModal(9)">Editar</button>
-            <img class="av" src="assets/integrantes/foto-perfil-10.webp" alt="Foto de Luan de Souza Lessa" width="400" height="400" loading="lazy" decoding="async">
+            <img class="av" src="assets/integrantes/foto-perfil-10.webp" alt="Foto de Luan de Souza Lessa" width="400" height="400" loading="lazy" decoding="async" onerror="this.outerHTML='&lt;div class=&quot;av&quot; aria-hidden=&quot;true&quot; style=&quot;background:#9bd8ff&quot;&gt;L&lt;/div&gt;'">
             <b>Luan de Souza Lessa</b>
             <small>2º Diretor de Pesquisa · Turma 8 – 7º período</small>
             <br><a class="lattes" href="https://lattes.cnpq.br/0036911996011435" target="_blank" rel="noopener">Currículo Lattes ↗</a>
@@ -277,7 +277,7 @@ body.admin-mode .admin-block{display:block !important}
             <button class="adm-badge-btn danger float-top-left admin-only" onclick="deleteMember(10)">X</button>
             <button class="adm-badge-btn float-top-right admin-only" onclick="triggerPhotoEdit(10)">Foto</button>
             <button class="adm-badge-btn float-mid-left admin-only" onclick="openMemberModal(10)">Editar</button>
-            <img class="av" src="assets/integrantes/foto-perfil-11.webp" alt="Foto de Maria Paula Barros Jota" width="400" height="400" loading="lazy" decoding="async">
+            <img class="av" src="assets/integrantes/foto-perfil-11.webp" alt="Foto de Maria Paula Barros Jota" width="400" height="400" loading="lazy" decoding="async" onerror="this.outerHTML='&lt;div class=&quot;av&quot; aria-hidden=&quot;true&quot; style=&quot;background:#9bd8ff&quot;&gt;M&lt;/div&gt;'">
             <b>Maria Paula Barros Jota</b>
             <small>1ª Diretora de Marketing · Turma 12 – 3º período</small>
             <br><a class="lattes" href="http://lattes.cnpq.br/4128557854303984" target="_blank" rel="noopener">Currículo Lattes ↗</a>
@@ -285,7 +285,7 @@ body.admin-mode .admin-block{display:block !important}
             <button class="adm-badge-btn danger float-top-left admin-only" onclick="deleteMember(11)">X</button>
             <button class="adm-badge-btn float-top-right admin-only" onclick="triggerPhotoEdit(11)">Foto</button>
             <button class="adm-badge-btn float-mid-left admin-only" onclick="openMemberModal(11)">Editar</button>
-            <img class="av" src="assets/integrantes/foto-perfil-12.webp" alt="Foto de Iscila Emiliane Pereira" width="400" height="400" loading="lazy" decoding="async">
+            <img class="av" src="assets/integrantes/foto-perfil-12.webp" alt="Foto de Iscila Emiliane Pereira" width="400" height="400" loading="lazy" decoding="async" onerror="this.outerHTML='&lt;div class=&quot;av&quot; aria-hidden=&quot;true&quot; style=&quot;background:#9bd8ff&quot;&gt;I&lt;/div&gt;'">
             <b>Iscila Emiliane Pereira</b>
             <small>2ª Diretora de Marketing · Turma 10 – 5º período</small>
             <br><a class="lattes" href="https://lattes.cnpq.br/4043363628606041" target="_blank" rel="noopener">Currículo Lattes ↗</a>
@@ -317,7 +317,7 @@ body.admin-mode .admin-block{display:block !important}
     </div>
 </section>
  
-<footer><div class="wrap"><span data-edit="rodape_1">Chapa Acadêmica Dr. Ângelo Machado · CAMFF · Afya Guanambi</span><br><span data-edit="rodape_2">Gestão 2027.1/2027.2 · Guanambi, Bahia</span><span id="ig"></span></div></footer>
+<footer><div class="wrap"><span data-edit="rodape_1">Chapa Acadêmica Dr. Ângelo Machado · CAMFF · Ciência, Prática e Representação por uma Medicina que une.&nbsp;</span><br><span data-edit="rodape_2">Gestão 2027.1/2027.2 · Guanambi, Bahia</span><span id="ig"></span></div></footer>
  
 <script id="site-config-script">
 const ADMIN_USER = "admin";
@@ -474,7 +474,14 @@ let CFG = {
             "assets/integrantes/foto-perfil-12.webp",
             "https://lattes.cnpq.br/4043363628606041"
         ]
-    ]
+    ],
+    "textos": {
+        "sobre_p1": "A Chapa Acadêmica Dr. Ângelo Machado nasce da união de 12 estudantes de Medicina da Afya Faculdade de Ciências Médicas de Guanambi, de diferentes períodos, turmas e trajetórias, mas com um propósito em comum: transformar o Centro Acadêmico Dr. Francisco Fernandes (CAMFF) em um espaço de voz, de formação e de oportunidades para cada acadêmico. Do 1º ao 8º período, estamos em todas as etapas da graduação. Isso nos permite conhecer de perto as dores de quem acabou de chegar e os desafios de quem já se aproxima do internato. Nossa composição nos coloca para ouvir, entender e representar todos os períodos.",
+        "sobre_p2": "O nome da chapa é uma homenagem a um médico, professor e pesquisador brasileiro, referência na educação médica e na ciência. Ele inspira nossos valores: formar médicos competentes, curiosos, comprometidos com o conhecimento e com a sociedade.",
+        "sobre_p3": "Nosso pilares: Ensino, pesquisa, extensão, integração acadêmica e representação estudantil. Esses cinco eixos sustentam as 12 propostas que apresentamos, pensadas para contemplar todos os períodos do curso. Nos comprometemos a atuar com ética, diálogo e responsabilidade, respeitando as diferentes opiniões e valorizando o conhecimento científico. Acreditamos que um Centro Acadêmico forte é aquele em que todos se sentem ouvidos, representados e convidados a participar.",
+        "rodape_1": "Chapa Acadêmica Dr. Ângelo Machado · CAMFF · Ciência, Prática e Representação por uma Medicina que une.",
+        "sobre_titulo": "Quem somos"
+    }
 };
  
 // Carrega alterações locais se existirem
@@ -951,4 +958,5 @@ function exportHTML() {
  
  
  
+
 </body></html>
